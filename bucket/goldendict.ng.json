@@ -12,7 +12,8 @@
     "bin": "GoldenDict.exe",
     "shortcuts": [
         [
-            "GoldenDict"
+            "goldendict.exe",
+            "goldendict"
         ]
     ]
 }
