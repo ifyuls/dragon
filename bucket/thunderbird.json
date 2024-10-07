@@ -47,9 +47,9 @@
     "autoupdate": {
         "architecture": {
             "64bit": {
-                "url": "h",
+                "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/win64/en-US/Thunderbird%20Setup%20$version.exe#/dl.7z",
                 "hash": {
-                    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/win64/en-US/Thunderbird%20Setup%20$version.exe#/dl.7z",
+                    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/SHA512SUMS",
                     "regex": "$sha512\\s+win64/en-US/$basename"
                 }
             }
