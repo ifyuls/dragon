@@ -9,7 +9,7 @@
             "hash": "1bda25c4e9ca91a3daec12372be034fc172706937934046c2174008abe1aae6a"
         }
     },
-    "bin": "GoldenDict.exe",
+    "bin": "goldendict.exe",
     "shortcuts": [
         [
             "goldendict.exe",
