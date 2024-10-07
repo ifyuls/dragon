@@ -1,0 +1,58 @@
+{
+    "version": "128.3.0esr",
+    "description": "A free email application that’s easy to set up and customize.",
+    "homepage": "https://www.thunderbird.net",
+    "license": "MPL-2.0",
+    "notes": [
+        "To set profile 'Scoop' as *DEFAULT*, or profiles/settings was lost after update:",
+        "  - Run 'Thunderbird Profile Manager', choose 'Scoop' then click 'Start Thunderbird'.",
+        "  - Visit 'about:profiles' page in Thunderbird to check *DEFAULT* profile.",
+        "For details: https://support.mozilla.org/en-US/kb/profile-manager-create-and-remove-thunderbird-profiles"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/128.3.0esr/win64/en-US/Thunderbird%20Setup%20128.3.0esr.exe#/dl.7z",
+            "hash": "sha512:cf5095261f2df1da255805b3baabc8d62ffc6755bedd944fd6bbd6cd99cea57348e706fb25e26c8b378e656f852de7f392a765094000e778fcd23fff1400be68"
+        }
+    },
+    "extract_dir": "core",
+    "post_install": [
+        "thunderbird -CreateProfile \"Scoop $persist_dir\\profile\"",
+        "$Addition = \"$persist_dir\\addition\"",
+        "if (Test-Path $Addition) {",
+        "  info 'Copying additional items...'",
+        "  Copy-Item -Path $Addition\\* -Destination $dir -Force -Recurse -ErrorAction SilentlyContinue",
+        "}"
+    ],
+    "bin": "thunderbird.exe",
+    "shortcuts": [
+        [
+            "thunderbird.exe",
+            "Thunderbird"
+        ],
+        [
+            "thunderbird.exe",
+            "Thunderbird Profile Manager",
+            "-P"
+        ]
+    ],
+    "persist": [
+        "distribution",
+        "profile"
+    ],
+    "checkver": {
+        "url": "https://product-details.mozilla.org/1.0/thunderbird_versions.json",
+        "jsonpath": "$.THUNDERBIRD_ESR"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "h",
+                "hash": {
+                    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/$version/win64/en-US/Thunderbird%20Setup%20$version.exe#/dl.7z",
+                    "regex": "$sha512\\s+win64/en-US/$basename"
+                }
+            }
+        }
+    }
+}
