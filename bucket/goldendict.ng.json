@@ -9,6 +9,7 @@
             "hash": "1bda25c4e9ca91a3daec12372be034fc172706937934046c2174008abe1aae6a"
         }
     },
+    "extract_dir": "GoldenDict-ng-24.09.0-Qt6.7.2",
     "bin": "goldendict.exe",
     "shortcuts": [
         [
