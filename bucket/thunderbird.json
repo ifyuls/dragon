@@ -1,5 +1,5 @@
 {
-    "version": "128.3.3esr",
+    "version": "128.4.0esr",
     "description": "A free email application that’s easy to set up and customize.",
     "homepage": "https://www.thunderbird.net",
     "license": "MPL-2.0",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/128.3.3esr/win64/en-US/Thunderbird%20Setup%20128.3.3esr.exe#/dl.7z",
-            "hash": "sha512:961016e00f7a814bf45daaaa694fbbfb9b755cc28f92acf8f279e3d29aff6bb8a6753732470f3da19d17d3fcd4da429b91668bcd4265617f37330243bb59fe3d"
+            "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/128.4.0esr/win64/en-US/Thunderbird%20Setup%20128.4.0esr.exe#/dl.7z",
+            "hash": "sha512:2ba7cdd931ed7dd8b22764b5e2560b0c161629064f80d04efbdcb9299d266df6df7bb1601cb66eda6927e6daed3f36f8185fdfb659ff99bf397d855ae70b05ee"
         }
     },
     "extract_dir": "core",
