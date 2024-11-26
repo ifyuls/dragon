@@ -11,8 +11,8 @@
     },
     "shortcuts": [
         [
-            "Clash Verge.exe",
-            "Clash Verge"
+            "clash-verge.exe",
+            "clash-verge"
         ]
     ],
     "persist": ".config",
