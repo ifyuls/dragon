@@ -46,12 +46,12 @@
         "script": [
             "if (Test-Path \"$env:APPDATA\\CherryStudio\" -PathType Any) {",
             "    Remove-Item -Recurse -Force \"$env:APPDATA\\CherryStudio\"",
+            "}",
             "if (Test-Path \"$env:LOCALAPPDATA\\cherrystudio-updater\" -PathType Container) {",
             "    Remove-Item -Recurse -Force \"$env:LOCALAPPDATA\\cherrystudio-updater\"",
             "}"
         ]
     },
-    "persist": "data",
     "checkver": {
         "github": "https://github.com/CherryHQ/cherry-studio"
     },
