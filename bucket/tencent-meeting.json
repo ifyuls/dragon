@@ -1,12 +1,12 @@
 {
-    "version": "3.36.10.416",
+    "version": "3.37.1.426",
     "description": "tencent meeting",
     "homepage": "https://meeting.tencent.com/index.html",
     "license": {
         "identifier": "Freeware"
     },
-    "url": "https://updatecdn.meeting.qq.com/cos/4ec0ec98616207101dbf8fd3ed8db5b5/TencentMeeting_0300000000_3.36.10.416_x86_64.publish.officialwebsite.exe#/dl.7z",
-    "hash": "md5:4ec0ec98616207101dbf8fd3ed8db5b5",
+    "url": "https://updatecdn.meeting.qq.com/cos/109392c9d325b1e5b09dbfe25a02ca20/TencentMeeting_0300000000_3.37.1.426_x86_64.publish.officialwebsite.exe#/dl.7z",
+    "hash": "md5:109392c9d325b1e5b09dbfe25a02ca20",
     "installer": {
         "script": [
             "Get-Item \"$dir\\`$_*_\" | Rename-Item -NewName \"$version\"",
